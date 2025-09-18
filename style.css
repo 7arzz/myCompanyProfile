@@ -1,60 +1,63 @@
+/* ===== GLOBAL ===== */
 html {
   scroll-behavior: smooth;
 }
 
-/* ===== GENERAL ===== */
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
 }
 
 h2.section-title {
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0d6efd;
+  position: relative;
 }
 
-/* ===== TEAM SECTION ===== */
-.team-member {
-  background: #fff;
-  padding: 20px 15px;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+h2.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #0d6efd;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
 }
 
-.team-member img {
-  border: 3px solid #0d6efd;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member h5 {
-  margin-top: 10px;
-  font-weight: 600;
-  color: #222;
-}
-
-/* Hover effect */
-.team-member:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.team-member img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+/* ===== NAVBAR ===== */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 /* ===== COVER SECTION ===== */
+.cover {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("assets/cover-bg.jpg") center/cover no-repeat;
+}
+
 .cover h1 {
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cover p {
   font-size: 1.3rem;
   font-weight: 400;
+  margin-top: 1rem;
 }
 
 .cover .btn {
@@ -68,7 +71,28 @@ h2.section-title {
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
+/* ===== ABOUT US ===== */
+#about {
+  padding: 80px 0;
+}
+
+#about .row h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
 /* ===== PRODUCT 3D ===== */
+#product {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
 #product p {
   max-width: 600px;
   margin: 20px auto 0;
@@ -76,13 +100,99 @@ h2.section-title {
   color: #555;
 }
 
+model-viewer {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+model-viewer:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== TEAM SECTION ===== */
+#team {
+  background-color: #dcdcdc;
+  padding: 80px 0;
+  border-top: 5px solid #0d6efd;
+}
+
+.team-card {
+  border-radius: 15px;
+  border: 2px solid #0d6efd;
+  background-color: #e0ffff;
+  box-shadow: 0px 4px 15px rgba(119, 239, 255, 0.1);
+  padding: 20px 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  padding: 20px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease,
+    background-color 0.5s ease, border 0.5s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  background-color: #8dfff5;
+  border: 2px solid #0d6efd;
+}
+
+.team-card img {
+  border: 3px solid #0d6efd;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 3px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.team-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25), 0 0 20px #0d6efd70;
+  filter: brightness(1.1);
+}
+
 /* ===== CONTACT ===== */
+#contact {
+  background-color: #0d6efd;
+  padding: 80px 0;
+  border-top: 5px solid #0d6efd;
+  color: #ffffff;
+}
+
 #contact ul li {
   font-size: 1.1rem;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+#contact ul li:hover {
+  transform: scale(1.05);
 }
 
 #contact p {
   font-weight: 500;
-  color: #444;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .cover h1 {
+    font-size: 2.5rem;
+  }
+  .cover p {
+    font-size: 1.1rem;
+  }
+  .team-card {
+    margin-bottom: 20px;
+  }
+  model-viewer {
+    height: 350px !important;
+    width: 100% !important;
+  }
 }
