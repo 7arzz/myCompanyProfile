@@ -68,7 +68,10 @@
               <a class="nav-link" href="#product">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#team">Team</a>
+              <a class="nav-link" href="#team1">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ai">ChatBot</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -98,9 +101,9 @@
     </section>
 
     <!-- About Us -->
-    <section id="about" class="py-5">
+    <section class="py-5">
       <div class="container">
-        <h2 class="section-title text-center">About Us</h2>
+        <h2 id="about" class="section-title text-center">About Us</h2>
         <p class="text-center">
           Perusahaan XYZ berdiri sejak 2020 dengan tujuan membantu bisnis
           meningkatkan efisiensi melalui solusi digital.
@@ -123,9 +126,9 @@
     </section>
 
     <!-- Product -->
-    <section id="product" class="py-5 bg-light text-center">
+    <section class="py-5 bg-light text-center">
       <div class="container">
-        <h2 class="section-title mb-4">Product Kami</h2>
+        <h2 id="product" class="section-title mb-4">Product Kami</h2>
         <model-viewer
           src="assets/robot_animated.glb"
           alt="Product 1"
@@ -135,7 +138,7 @@
           environment-image="neutral"
           style="width: 100%; max-width: 500px; height: 500px; margin: 0 auto"
         ></model-viewer>
-        <p class="fs-4">
+        <p class="fs-4 mt-4">
           Robot digunakan sebagai asisten digital untuk berbagai kebutuhan.
         </p>
       </div>
@@ -144,7 +147,9 @@
     <!-- Team Section -->
     <section id="team" class="py-5 bg-light">
       <div class="container">
-        <h2 class="section-title text-center fw-bolder mb-5">Our Team</h2>
+        <h2 id="team1" class="section-title text-center fw-bolder mb-5">
+          Our Team
+        </h2>
         <div class="row justify-content-center g-4" id="teamContainer"></div>
       </div>
     </section>
@@ -155,7 +160,14 @@
         <h2 class="section-title text-center">Layanan AI Kami</h2>
         <iframe
           src="https://udify.app/chatbot/TzyJeWnsYI66AI3e"
-          style="width: 100%; height: 100%; min-height: 700px"
+          style="
+            width: 100%;
+            height: 100%;
+            min-height: 700px;
+            border: 2px solid #0d6efd;
+            border-radius: 30px;
+            box-shadow: 5px 15px 30px rgba(105, 255, 248, 0.904);
+          "
           frameborder="0"
           allow="microphone"
         >
@@ -183,6 +195,13 @@
         </p>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2025 XYZ Company. All rights reserved.</p>
+      </div>
+    </footer>
 
     <!-- model-viewer -->
     <script

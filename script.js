@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  document.getElementById("cover").scrollIntoView({ behavior: "smooth" });
+});
+
 const teams = {
   ceo: [
     {
@@ -83,10 +87,10 @@ for (const dept in teams) {
         <img src="${person.foto}" class="mx-auto mb-3" width="120" height="120" alt="${person.role}">
         <h5 class="fw-bold fs-3">${person.role}</h5>
         <div class="info">
-          <p class="fw-bold fs-5" style="color: #ffffff;"><b>Nama:</b> ${person.nama}</p>
-          <p class="fw-bold fs-5" style="color: #ffffff;"><b>Alamat:</b> ${person.alamat}</p>
-          <p class="fw-bold fs-5" style="color: #ffffff;"><b>No Telepon:</b> ${person.telp}</p>
-          <p class="fw-bold fs-5" style="color: #ffffff;"><b>Kelas:</b> ${person.kelas}</p>
+          <p class="fw-bold fs-5" ><b>Nama:</b> ${person.nama}</p>
+          <p class="fw-bold fs-5" ><b>Alamat:</b> ${person.alamat}</p>
+          <p class="fw-bold fs-5" ><b>No Telepon:</b> ${person.telp}</p>
+          <p class="fw-bold fs-5" ><b>Kelas:</b> ${person.kelas}</p>
         </div>
       </div>
     `;
@@ -100,7 +104,7 @@ for (const dept in teams) {
         setTimeout(() => (infoDiv.style.display = "none"), 400);
       } else {
         infoDiv.style.display = "block";
-        setTimeout(() => (infoDiv.style.opacity = "1"), 10);
+        setTimeout(() => (infoDiv.style.opacity = "1"), 4);
       }
     };
 

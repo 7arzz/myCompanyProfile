@@ -130,7 +130,7 @@ model-viewer:hover {
 #team {
   background-color: #dcdcdc;
   padding: clamp(50px, 8vw, 100px) 0;
-  border-top: 5px solid #0d6efd;
+  /* border-top: 5px solid #0d6efd; */
 }
 
 .team-card {
@@ -182,7 +182,7 @@ model-viewer:hover {
 }
 
 .team-card:hover h5 {
-  color: #004bb7;
+  color: #5797f1;
 }
 
 /* Detail info */
@@ -212,9 +212,8 @@ model-viewer:hover {
 
 /* ===== CONTACT ===== */
 #contact {
-  background-color: #0d6efd;
+  background-color: #b9b9b9;
   padding: clamp(50px, 8vw, 100px) 0;
-  border-top: 5px solid #0d6efd;
   color: #ffffff;
 }
 
