@@ -1,3 +1,10 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ===== GLOBAL ===== */
 html {
   scroll-behavior: smooth;
@@ -33,6 +40,14 @@ h2.section-title::after {
 .navbar-brand {
   font-weight: 700;
   font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
 }
 
 /* ===== COVER SECTION ===== */
@@ -73,7 +88,7 @@ h2.section-title::after {
 
 /* ===== ABOUT US ===== */
 #about {
-  padding: 80px 0;
+  padding: clamp(50px, 8vw, 100px) 0;
 }
 
 #about .row h5 {
@@ -88,7 +103,7 @@ h2.section-title::after {
 
 /* ===== PRODUCT 3D ===== */
 #product {
-  padding: 80px 0;
+  padding: clamp(50px, 8vw, 100px) 0;
   text-align: center;
   background-color: #f8f9fa;
 }
@@ -114,7 +129,7 @@ model-viewer:hover {
 /* ===== TEAM SECTION ===== */
 #team {
   background-color: #dcdcdc;
-  padding: 80px 0;
+  padding: clamp(50px, 8vw, 100px) 0;
   border-top: 5px solid #0d6efd;
 }
 
@@ -123,7 +138,6 @@ model-viewer:hover {
   border: 2px solid #0d6efd;
   background-color: #e0ffff;
   box-shadow: 0px 4px 15px rgba(119, 239, 255, 0.1);
-  padding: 20px 10px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -138,7 +152,7 @@ model-viewer:hover {
   transform: scale(1.05) translateY(-8px);
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
   z-index: 10;
-  background-color: #8dfff5;
+  background: linear-gradient(135deg, #06b3a4, #acf4ff);
   border: 2px solid #0d6efd;
 }
 
@@ -158,10 +172,48 @@ model-viewer:hover {
   filter: brightness(1.1);
 }
 
+/* Role */
+.team-card h5 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+
+.team-card:hover h5 {
+  color: #004bb7;
+}
+
+/* Detail info */
+.team-card .info {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.team-card .info p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Chat AI */
+#chatbot {
+  width: 100%;
+  height: 800px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #acf4ff;
+}
+
 /* ===== CONTACT ===== */
 #contact {
   background-color: #0d6efd;
-  padding: 80px 0;
+  padding: clamp(50px, 8vw, 100px) 0;
   border-top: 5px solid #0d6efd;
   color: #ffffff;
 }
@@ -178,6 +230,27 @@ model-viewer:hover {
 
 #contact p {
   font-weight: 500;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+#contact a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+#contact a:hover::after {
+  width: 100%;
 }
 
 /* ===== RESPONSIVE ===== */

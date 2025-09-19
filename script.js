@@ -1,4 +1,3 @@
-// script.js
 const teams = {
   ceo: [
     {
@@ -78,25 +77,27 @@ for (const dept in teams) {
   teams[dept].forEach((person) => {
     const div = document.createElement("div");
     div.className = "col-md-4 col-sm-6";
+
     div.innerHTML = `
-      <div class="card team-card text-center shadow-sm p-3">
-        <img src="${person.foto}" class="rounded-circle mx-auto mb-3" width="120" height="120" alt="${person.role}">
-        <h5 class="fw-bold">${person.role}</h5>
-        <div class="info" style="display: none; opacity: 0; transition: all 0.3s;">
-          <p class="small mb-0"><b>Nama:</b> ${person.nama}</p>
-          <p class="small mb-0"><b>Alamat:</b> ${person.alamat}</p>
-          <p class="small mb-0"><b>No Telepon:</b> ${person.telp}</p>
-          <p class="small mb-0"><b>Kelas:</b> ${person.kelas}</p>
+      <div class="card team-card p-3 shadow-sm">
+        <img src="${person.foto}" class="mx-auto mb-3" width="120" height="120" alt="${person.role}">
+        <h5 class="fw-bold fs-3">${person.role}</h5>
+        <div class="info">
+          <p class="fw-bold fs-5" style="color: #ffffff;"><b>Nama:</b> ${person.nama}</p>
+          <p class="fw-bold fs-5" style="color: #ffffff;"><b>Alamat:</b> ${person.alamat}</p>
+          <p class="fw-bold fs-5" style="color: #ffffff;"><b>No Telepon:</b> ${person.telp}</p>
+          <p class="fw-bold fs-5" style="color: #ffffff;"><b>Kelas:</b> ${person.kelas}</p>
         </div>
       </div>
     `;
 
+    const card = div.querySelector(".card");
     const infoDiv = div.querySelector(".info");
 
-    div.querySelector(".card").onclick = () => {
+    card.onclick = () => {
       if (infoDiv.style.display === "block") {
         infoDiv.style.opacity = "0";
-        setTimeout(() => (infoDiv.style.display = "none"), 300);
+        setTimeout(() => (infoDiv.style.display = "none"), 400);
       } else {
         infoDiv.style.display = "block";
         setTimeout(() => (infoDiv.style.opacity = "1"), 10);
