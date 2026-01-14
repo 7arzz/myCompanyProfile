@@ -8,139 +8,139 @@ const teams = [
     role: "CEO",
     nama: "Alfina Amoerita Anggraini",
     kelas: "X Digital business 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/CEO.jpg",
   },
   {
     role: "DIRECTOR OF PRODUCTION",
     nama: "Ardina Mozarella",
     kelas: "X office management 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Direct_Production.jpg",
   },
   {
     role: "DIRECTOR OF MARKETING",
     nama: "Rimarcha Dwi Fellysia",
     kelas: "X business digital 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Direct_Marketing.jpg",
   },
   {
     role: "DIRECTOR OF PUBLIC RELATIONS",
     nama: "Arika Rahmasari",
     kelas: "X Business Digital 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Direct_PR.jpg",
   },
   {
     role: "DIRECTOR OF HRD",
     nama: "Salma Bunga Amelia",
     kelas: "X Accounting 3",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Direct_HRD.jpg",
   },
   {
     role: "DIRECTOR OF FINANCE",
     nama: "Shiva Shavira",
     kelas: "X Accounting 3",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Direct_Finance.jpg",
   },
   {
     role: "MANAGER RESEARCH AND DEVELOPMENT ",
     nama: "Shafa Aliyah Renata",
     kelas: "X Business Digital 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Manager_R&D.jpg",
   },
   {
     role: "MANAGER PRODUCTION",
     nama: "Rina Anggraini",
     kelas: "X Business Digital 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Manager_Production.jpg",
   },
   {
     role: "PURCHASING MANAGER",
     nama: "Wilujeng Naisilah Chusnul Pratama",
     kelas: "X Accounting 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Purchasing_Manager.jpg",
   },
   {
     role: "QUALITY CONTROL MANAGER",
     nama: "Abimanyu Yoga Perdana",
     kelas: "X Business Digital 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Quality_Control_Manager.jpg",
   },
   {
     role: "MANAGER MARKETING",
     nama: "Andaru Ilham Amerta",
     kelas: "X Software Engineering ",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Manager_Marketing.jpg",
   },
   {
     role: "SALES MARKETING",
     nama: "Della Savira Damayanti",
     kelas: "X Business Digital 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Sales_Marketing1.jpg",
   },
   {
     role: "SALES MARKETING",
     nama: "Khansa Aisya Zhafira",
     kelas: "X Accounting 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Sales_Marketing2.jpg",
   },
   {
     role: "MARKETING RESEARCH",
     nama: "Geisya Odelia Bagus",
     kelas: "X Visual Communication Design 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Marketing_Research.jpg",
   },
   {
     role: "CREATIVE DESIGN",
     nama: "Audrey Zahra Amaura",
     kelas: "X Visual Communication Design 3",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Creative_Design.jpg",
   },
   {
     role: "PUBLIC RELATIONS MANAGER",
     nama: "Mayumi Rahayu Wahyu N",
     kelas: "X Business Digital 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Public_Relations_Manager1.jpg",
   },
   {
     role: "PUBLIC RELATIONS MANAGER",
     nama: "Dhiny Ayuningtyas",
     kelas: "X Business Digital 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Public_Relations_Manager2.jpg",
   },
   {
     role: "COMMUNITY MANAGER",
     nama: "Dian Maulida",
     kelas: "X Business Digital 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Community_Manager.jpg",
   },
   {
     role: "TRAINING DEVELOPMENT MANAGER",
     nama: "Widya Pramundita Putri",
     kelas: "X Accounting 2",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Training_Development_Manager.jpg",
   },
   {
     role: "ATTANDACE AND PAYROLL",
     nama: "Nayra Salsabilla",
     kelas: "X Office Management 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Attendance_and_Payroll.jpg",
   },
   {
     role: "MANAGER FINANCE 1",
     nama: "Keyla Nur Azizah Putriani",
     kelas: "X Accounting 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Manager_Finance1.jpg",
   },
   {
     role: "MANAGER FINANCE 2",
     nama: "Cinta Azzahra Putri L",
     kelas: "X Accounting 3",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Manager_Finance2.jpg",
   },
   {
     role: "SECRETARY",
     nama: "Wahyu Siva Ayuningtyas",
     kelas: "X Business Digital 1",
-    foto: "assets/7arzz.jpg",
+    foto: "assets/anggota/Secretary.jpg",
   },
 ];
 
@@ -152,7 +152,7 @@ teams.forEach((person) => {
 
   div.innerHTML = `
     <div class="card team-card p-3 shadow-sm data-aos="zoom-out-down"">
-      <img src="${person.foto}" class="mx-auto mb-3 img-fluid rounded-circle" width="120" height="120" alt="${person.role}">
+      <img src="${person.foto}" class="mx-auto mb-3 img-fluid " style="border-radius: 50% 50% 3% 3%;" width="120" height="120" alt="${person.role}">
       <h5 class="fw-bold fs-3">${person.role}</h5>
       <div class="info">
         <p><strong>Nama:</strong> ${person.nama}</p>
