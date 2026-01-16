@@ -104,7 +104,7 @@ const teams = [
     role: "PUBLIC RELATIONS MANAGER",
     nama: "Dhiny Ayuningtyas",
     kelas: "X Business Digital 1",
-    foto: "assets/anggota/Public_Relations_Manager2.jpg",
+    foto: "assets/anggota/Training_Development_Manager.jpg",
   },
   {
     role: "COMMUNITY MANAGER",
@@ -116,7 +116,7 @@ const teams = [
     role: "TRAINING DEVELOPMENT MANAGER",
     nama: "Widya Pramundita Putri",
     kelas: "X Accounting 2",
-    foto: "assets/anggota/Training_Development_Manager.jpg",
+    foto: "assets/anggota/Public_Relations_Manager2.jpg",
   },
   {
     role: "ATTANDACE AND PAYROLL",
